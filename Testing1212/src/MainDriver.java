@@ -1,11 +1,8 @@
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class MainDriver {
@@ -52,6 +49,9 @@ public class MainDriver {
 				firstLetters.add(s);
 			}
 		}
+		
+		input.close();
+		scan.close();
 	}
 
 	private static boolean check(String answer, String firstLetter) {

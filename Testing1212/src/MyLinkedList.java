@@ -275,7 +275,8 @@ public class MyLinkedList<E> implements MyList<E> {
       }
     }
     
-    private class Node<E> {
+    @SuppressWarnings("hiding")
+	private class Node<E> {
       E element;
       Node<E> next;
 
